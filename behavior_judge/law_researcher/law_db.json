@@ -1,0 +1,231 @@
+{
+  "California, United States": {
+    "highway_merge": [
+      {"description": "A merging vehicle must yield the right-of-way to traffic already on the freeway.", "source": "CA VC 21804", "applies_to": "right_of_way"},
+      {"description": "No person shall drive at such a slow speed as to impede or block the normal and reasonable movement of traffic.", "source": "CA VC 22400", "applies_to": "minimum_speed"},
+      {"description": "Whenever a highway lane ends and the driver is required to merge, the driver shall yield to traffic in the continuing lane.", "source": "CA VC 21804(a)", "applies_to": "merge_yield"},
+      {"description": "Safe following distance must be maintained so that the driver can stop safely.", "source": "CA VC 21703", "applies_to": "following_distance"}
+    ],
+    "lane_change": [
+      {"description": "A vehicle shall be driven entirely within a single lane and shall not be moved from such lane until the driver has first ascertained that such movement can be made with safety.", "source": "CA VC 21658(a)", "applies_to": "lane_discipline"},
+      {"description": "A signal of intention to turn or change lanes shall be given continuously during the last 100 feet before executing the movement.", "source": "CA VC 22108", "applies_to": "signaling"},
+      {"description": "No person shall turn a vehicle from a direct course or move right or left upon a roadway until such movement can be made with reasonable safety.", "source": "CA VC 22107", "applies_to": "safety_before_moving"}
+    ],
+    "intersection": [
+      {"description": "The driver of a vehicle approaching a stop sign shall stop at a limit line. After stopping, the driver shall yield the right-of-way to any vehicles which have entered the intersection.", "source": "CA VC 22450", "applies_to": "stop_sign_compliance"},
+      {"description": "When two vehicles enter an uncontrolled intersection at approximately the same time, the driver of the vehicle on the left shall yield the right-of-way to the vehicle on the right.", "source": "CA VC 21800(a)", "applies_to": "right_of_way_uncontrolled"},
+      {"description": "The driver of any vehicle intending to turn left shall yield the right-of-way to any vehicle approaching from the opposite direction which is so close as to constitute a hazard.", "source": "CA VC 21801(a)", "applies_to": "left_turn_yield"},
+      {"description": "Traffic signal compliance — red means stop before entering intersection.", "source": "CA VC 21453(a)", "applies_to": "signal_compliance"}
+    ],
+    "pedestrian_crosswalk": [
+      {"description": "The driver of a vehicle shall yield the right-of-way to a pedestrian crossing the roadway within any marked crosswalk or within any unmarked crosswalk at an intersection.", "source": "CA VC 21950(a)", "applies_to": "pedestrian_yield"},
+      {"description": "No pedestrian shall suddenly leave a curb or other place of safety and walk or run into the path of a vehicle which is so close as to constitute an immediate hazard.", "source": "CA VC 21950(b)", "applies_to": "pedestrian_duty"},
+      {"description": "The driver of a vehicle approaching a pedestrian within any crosswalk shall exercise all due care and shall reduce speed or take any other action to safeguard the safety of the pedestrian.", "source": "CA VC 21950(c)", "applies_to": "due_care"}
+    ],
+    "school_zone": [
+      {"description": "Speed limit is 25 mph when children are present going to or leaving school during school hours.", "source": "CA VC 22352(b)(2)", "applies_to": "speed_limit"},
+      {"description": "Driver must stop for school buses displaying flashing red lights on a two-lane road.", "source": "CA VC 22454(a)", "applies_to": "school_bus_stop"},
+      {"description": "No passing in a school zone when children are present.", "source": "CA VC 21751", "applies_to": "no_passing"}
+    ],
+    "following_distance": [
+      {"description": "A driver shall not follow another vehicle more closely than is reasonable and prudent, having due regard for the speed of such vehicle and the traffic upon, and the condition of, the roadway.", "source": "CA VC 21703", "applies_to": "tailgating"},
+      {"description": "Motor trucks must maintain at least 300 feet following distance on a highway outside a business or residential district.", "source": "CA VC 21704", "applies_to": "truck_following_distance"}
+    ],
+    "roundabout": [
+      {"description": "Vehicles entering a roundabout must yield to vehicles already circulating within the roundabout.", "source": "CA VC 21801", "applies_to": "yield_on_entry"},
+      {"description": "Vehicles must travel in a counterclockwise direction within a roundabout.", "source": "CA VC 21650", "applies_to": "direction_of_travel"},
+      {"description": "Signaling is required when exiting a roundabout.", "source": "CA VC 22108", "applies_to": "exit_signaling"}
+    ]
+  },
+
+  "Texas, United States": {
+    "highway_merge": [
+      {"description": "An operator entering a highway from a private road, driveway, alley, or building shall yield the right-of-way to approaching vehicles.", "source": "TX TRC 545.154", "applies_to": "right_of_way"},
+      {"description": "An operator shall drive at a speed greater than the minimum speed limit if the operator's slow speed impedes the normal flow of traffic.", "source": "TX TRC 545.363", "applies_to": "minimum_speed"},
+      {"description": "An operator on a freeway shall yield to vehicles already in the lane being entered during a lane merge.", "source": "TX TRC 545.061", "applies_to": "merge_yield"}
+    ],
+    "lane_change": [
+      {"description": "An operator on a roadway divided into two or more clearly marked lanes shall drive as nearly as practical entirely within a single lane.", "source": "TX TRC 545.060(a)", "applies_to": "lane_discipline"},
+      {"description": "An operator may not move from the lane unless that movement can be made safely.", "source": "TX TRC 545.060(b)", "applies_to": "safe_movement"},
+      {"description": "An operator intending to turn or change lanes shall signal continuously for not less than the last 100 feet before the turn.", "source": "TX TRC 545.104", "applies_to": "signaling"}
+    ],
+    "intersection": [
+      {"description": "An operator approaching an intersection shall stop at a stop sign and yield the right-of-way to a vehicle in the intersection or approaching on another highway closely enough to be an immediate hazard.", "source": "TX TRC 544.010", "applies_to": "stop_sign_compliance"},
+      {"description": "When two vehicles reach an uncontrolled intersection at approximately the same time, the operator of the vehicle on the left shall yield to the vehicle on the right.", "source": "TX TRC 545.151(b)", "applies_to": "right_of_way_uncontrolled"},
+      {"description": "An operator intending to turn left shall yield the right-of-way to a vehicle approaching from the opposite direction if it is in the intersection or so close as to be an immediate hazard.", "source": "TX TRC 545.152", "applies_to": "left_turn_yield"}
+    ],
+    "pedestrian_crosswalk": [
+      {"description": "An operator shall yield the right-of-way to a pedestrian crossing a roadway in a crosswalk.", "source": "TX TRC 552.003", "applies_to": "pedestrian_yield"},
+      {"description": "An operator approaching a pedestrian in a crosswalk shall slow the vehicle or stop if necessary to yield.", "source": "TX TRC 552.003(b)", "applies_to": "due_care"}
+    ],
+    "school_zone": [
+      {"description": "Speed limit of 20 mph in a school crossing zone when children are present.", "source": "TX TRC 545.356", "applies_to": "speed_limit"},
+      {"description": "Must stop for school bus displaying alternating red lights.", "source": "TX TRC 545.066", "applies_to": "school_bus_stop"}
+    ],
+    "following_distance": [
+      {"description": "An operator shall ensure that the vehicle follows another vehicle only as closely as is reasonable and prudent, having due regard for the speed of vehicles and the condition of the highway.", "source": "TX TRC 545.062(a)", "applies_to": "tailgating"}
+    ],
+    "roundabout": [
+      {"description": "Vehicles must yield to traffic already in the roundabout before entering.", "source": "TX TRC 545.151", "applies_to": "yield_on_entry"},
+      {"description": "Vehicles must travel counterclockwise in a roundabout.", "source": "TX TRC 545.051", "applies_to": "direction_of_travel"}
+    ]
+  },
+
+  "New York, United States": {
+    "highway_merge": [
+      {"description": "The driver of a vehicle about to enter or cross a roadway from any place other than another roadway shall yield the right of way to all vehicles approaching on the roadway.", "source": "NY VTL 1143", "applies_to": "right_of_way"},
+      {"description": "No person shall drive a motor vehicle at such a slow speed as to impede the normal and reasonable movement of traffic.", "source": "NY VTL 1181(a)", "applies_to": "minimum_speed"}
+    ],
+    "lane_change": [
+      {"description": "A vehicle shall be driven as nearly as practicable entirely within a single lane and shall not be moved from such lane until the driver has first ascertained that such movement can be made with safety.", "source": "NY VTL 1128(a)", "applies_to": "lane_discipline"},
+      {"description": "No turn signal required distance specified, but signal must be given before the movement.", "source": "NY VTL 1163", "applies_to": "signaling"}
+    ],
+    "intersection": [
+      {"description": "Except when directed to proceed by a police officer, every driver facing a steady red signal shall stop before entering the crosswalk on the near side of the intersection.", "source": "NY VTL 1111(d)", "applies_to": "signal_compliance"},
+      {"description": "The driver approaching on the left shall yield the right of way to the driver approaching on the right at uncontrolled intersections.", "source": "NY VTL 1140", "applies_to": "right_of_way_uncontrolled"},
+      {"description": "The driver intending to turn left shall yield the right of way to any vehicle approaching from the opposite direction.", "source": "NY VTL 1141", "applies_to": "left_turn_yield"}
+    ],
+    "pedestrian_crosswalk": [
+      {"description": "The driver of a vehicle shall yield the right of way to a pedestrian crossing the roadway within a crosswalk.", "source": "NY VTL 1151(a)", "applies_to": "pedestrian_yield"},
+      {"description": "No driver shall pass any other vehicle which has stopped for a pedestrian.", "source": "NY VTL 1151(b)", "applies_to": "no_pass_stopped_vehicle"}
+    ],
+    "school_zone": [
+      {"description": "Speed limit is 20 mph in a school speed zone when signs are posted.", "source": "NY VTL 1180(c)", "applies_to": "speed_limit"},
+      {"description": "Drivers must stop for school buses with flashing red lights.", "source": "NY VTL 1174", "applies_to": "school_bus_stop"}
+    ],
+    "following_distance": [
+      {"description": "The driver shall not follow another vehicle more closely than is reasonable and prudent.", "source": "NY VTL 1129(a)", "applies_to": "tailgating"}
+    ],
+    "roundabout": [
+      {"description": "Vehicles entering a traffic circle must yield to vehicles already in the circle.", "source": "NY VTL 1140", "applies_to": "yield_on_entry"}
+    ]
+  },
+
+  "Florida, United States": {
+    "highway_merge": [
+      {"description": "The driver of a vehicle about to enter or cross a roadway from any place other than another roadway shall yield the right-of-way to all vehicles approaching on such roadway.", "source": "FL Stat 316.125", "applies_to": "right_of_way"},
+      {"description": "No person shall drive a motor vehicle at such a slow speed as to impede or block the normal and reasonable movement of traffic.", "source": "FL Stat 316.183(3)", "applies_to": "minimum_speed"}
+    ],
+    "lane_change": [
+      {"description": "A vehicle shall be driven as nearly as practicable entirely within a single lane and shall not be moved from such lane until the driver has first ascertained that such movement can be made with safety.", "source": "FL Stat 316.089(1)", "applies_to": "lane_discipline"},
+      {"description": "A signal of intention to turn right or left shall be given continuously during not less than the last 100 feet traveled by the vehicle before turning.", "source": "FL Stat 316.155(2)", "applies_to": "signaling"}
+    ],
+    "intersection": [
+      {"description": "The driver facing a steady red signal shall stop before entering the intersection and shall remain standing until an indication to proceed is shown.", "source": "FL Stat 316.075(1)(c)", "applies_to": "signal_compliance"},
+      {"description": "At uncontrolled intersections, the driver on the left shall yield to the driver on the right.", "source": "FL Stat 316.121(1)", "applies_to": "right_of_way_uncontrolled"},
+      {"description": "The driver intending to turn left shall yield to approaching vehicles from the opposite direction.", "source": "FL Stat 316.122", "applies_to": "left_turn_yield"}
+    ],
+    "pedestrian_crosswalk": [
+      {"description": "The driver of a vehicle shall yield the right-of-way to any pedestrian crossing the roadway within a crosswalk.", "source": "FL Stat 316.130(7)", "applies_to": "pedestrian_yield"},
+      {"description": "No driver shall overtake and pass any vehicle that has stopped for a pedestrian.", "source": "FL Stat 316.130(8)", "applies_to": "no_pass_stopped_vehicle"}
+    ],
+    "school_zone": [
+      {"description": "Speed limit is 20 mph in a school zone when children are present.", "source": "FL Stat 316.189", "applies_to": "speed_limit"},
+      {"description": "Must stop for school buses displaying alternating flashing red lights.", "source": "FL Stat 316.172", "applies_to": "school_bus_stop"}
+    ],
+    "following_distance": [
+      {"description": "The driver of a motor vehicle shall not follow another vehicle more closely than is reasonable and prudent.", "source": "FL Stat 316.0895(1)", "applies_to": "tailgating"}
+    ],
+    "roundabout": [
+      {"description": "Vehicles entering a roundabout must yield to circulating traffic.", "source": "FL Stat 316.121", "applies_to": "yield_on_entry"}
+    ]
+  },
+
+  "England, United Kingdom": {
+    "highway_merge": [
+      {"description": "Give way to traffic already on the motorway when joining from a slip road. Adjust speed to fit safely into traffic.", "source": "Highway Code Rule 259", "applies_to": "right_of_way"},
+      {"description": "Do not cross a solid white line on the left when merging; use the slip road fully before merging.", "source": "Highway Code Rule 131", "applies_to": "merge_discipline"}
+    ],
+    "lane_change": [
+      {"description": "You should keep to the left in normal circumstances. Do not use the middle or right-hand lane for normal driving.", "source": "Highway Code Rule 264", "applies_to": "lane_discipline"},
+      {"description": "Use your mirrors, signal, then manoeuvre (MSM routine) before changing lanes.", "source": "Highway Code Rule 133", "applies_to": "signaling"},
+      {"description": "Allow at least a two-second gap between you and the vehicle in front on roads with a 60 mph limit.", "source": "Highway Code Rule 126", "applies_to": "following_distance"}
+    ],
+    "intersection": [
+      {"description": "At a junction controlled by a stop sign, you must stop and give way to traffic on the major road.", "source": "Highway Code Rule 172", "applies_to": "stop_sign_compliance"},
+      {"description": "At a give way junction, slow down and give priority to traffic on the road you are joining.", "source": "Highway Code Rule 172", "applies_to": "give_way"},
+      {"description": "When turning right at a junction, give way to oncoming traffic.", "source": "Highway Code Rule 179", "applies_to": "left_turn_yield"}
+    ],
+    "pedestrian_crosswalk": [
+      {"description": "At a zebra crossing, give way to any pedestrian waiting to cross or crossing.", "source": "Highway Code Rule 195", "applies_to": "pedestrian_yield"},
+      {"description": "At a pelican crossing, give way to pedestrians who are crossing when the amber light is flashing.", "source": "Highway Code Rule 196", "applies_to": "controlled_crossing"}
+    ],
+    "school_zone": [
+      {"description": "Watch for children and school crossing patrols near schools; be prepared to stop.", "source": "Highway Code Rule 209", "applies_to": "school_zone_caution"},
+      {"description": "You must stop when a school crossing patrol shows a 'Stop for Children' sign.", "source": "Highway Code Rule 209", "applies_to": "school_patrol_stop"}
+    ],
+    "following_distance": [
+      {"description": "Allow at least a two-second gap between you and the vehicle in front on roads carrying faster traffic.", "source": "Highway Code Rule 126", "applies_to": "tailgating"},
+      {"description": "On motorways or dual carriageways, allow at least a two-second gap in good conditions, more in poor conditions.", "source": "Highway Code Rule 126", "applies_to": "motorway_following"}
+    ],
+    "roundabout": [
+      {"description": "Give priority to traffic approaching from your right unless road markings indicate otherwise.", "source": "Highway Code Rule 185", "applies_to": "yield_on_entry"},
+      {"description": "Signal left after you have passed the exit before the one you wish to take.", "source": "Highway Code Rule 186", "applies_to": "exit_signaling"},
+      {"description": "Keep to the left unless road markings indicate otherwise for multi-lane roundabouts.", "source": "Highway Code Rule 187", "applies_to": "lane_discipline"}
+    ]
+  },
+
+  "Bavaria, Germany": {
+    "highway_merge": [
+      {"description": "Reißverschlussverfahren (zipper merge) is required when a lane ends; vehicles must merge alternately.", "source": "StVO §7(4)", "applies_to": "zipper_merge"},
+      {"description": "Vehicles on the main road have priority over merging vehicles.", "source": "StVO §8", "applies_to": "right_of_way"},
+      {"description": "On the Autobahn, minimum speed is implicitly expected — vehicles must be capable of at least 60 km/h.", "source": "StVO §18(1)", "applies_to": "minimum_speed"}
+    ],
+    "lane_change": [
+      {"description": "Lane changes must be performed with care and must not endanger or unnecessarily obstruct other road users.", "source": "StVO §7(5)", "applies_to": "safe_movement"},
+      {"description": "Signals must be given in good time before a lane change.", "source": "StVO §9(1)", "applies_to": "signaling"},
+      {"description": "On Autobahn, passing on the right is generally prohibited.", "source": "StVO §5(1)", "applies_to": "no_right_pass"}
+    ],
+    "intersection": [
+      {"description": "Right before left rule applies at uncontrolled intersections — vehicles coming from the right have priority.", "source": "StVO §8(1)", "applies_to": "right_of_way_uncontrolled"},
+      {"description": "Vehicles must stop at stop signs and may not proceed until the way is clear.", "source": "StVO §41 Z 206", "applies_to": "stop_sign_compliance"},
+      {"description": "Turning left must yield to oncoming traffic and to cyclists on bike lanes.", "source": "StVO §9(3)", "applies_to": "left_turn_yield"}
+    ],
+    "pedestrian_crosswalk": [
+      {"description": "Pedestrians on a zebra crossing (Zebrastreifen) have absolute right of way. Vehicles must stop.", "source": "StVO §26(1)", "applies_to": "pedestrian_yield"},
+      {"description": "Speed must be reduced when approaching a pedestrian crossing if pedestrians are waiting.", "source": "StVO §26(1)", "applies_to": "approach_speed"}
+    ],
+    "school_zone": [
+      {"description": "Speed limit near schools is reduced, typically 30 km/h in school zones.", "source": "StVO §41 Z 274", "applies_to": "speed_limit"},
+      {"description": "Special caution required near schools, kindergartens, and playgrounds.", "source": "StVO §3(2a)", "applies_to": "due_care"}
+    ],
+    "following_distance": [
+      {"description": "Minimum following distance must allow the vehicle to stop safely if the vehicle in front brakes suddenly.", "source": "StVO §4(1)", "applies_to": "tailgating"},
+      {"description": "At speeds over 100 km/h, the minimum following distance is half the speed in meters (e.g., 50m at 100 km/h).", "source": "StVO §4(1) guidance", "applies_to": "highway_following"}
+    ],
+    "roundabout": [
+      {"description": "Vehicles in the roundabout have right of way over entering vehicles unless signs indicate otherwise.", "source": "StVO §8 + Z 215", "applies_to": "yield_on_entry"},
+      {"description": "No signaling required when entering a roundabout; signal when exiting.", "source": "StVO §9(2)", "applies_to": "exit_signaling"}
+    ]
+  },
+
+  "Ontario, Canada": {
+    "highway_merge": [
+      {"description": "A driver entering a highway must yield to traffic already on the highway.", "source": "HTA s.158(1)", "applies_to": "right_of_way"},
+      {"description": "No person shall drive a motor vehicle at such a slow rate of speed as to impede or block the normal and reasonable movement of traffic.", "source": "HTA s.132", "applies_to": "minimum_speed"}
+    ],
+    "lane_change": [
+      {"description": "No person shall move a vehicle from one lane to another unless the driver has first ascertained that the movement can be made safely.", "source": "HTA s.154(1)(a)", "applies_to": "safe_movement"},
+      {"description": "Signal must be given continuously for a reasonable distance before changing lanes.", "source": "HTA s.142(1)", "applies_to": "signaling"}
+    ],
+    "intersection": [
+      {"description": "The driver approaching a stop sign shall stop and yield to traffic in the intersection or so close as to be an immediate hazard.", "source": "HTA s.136(1)", "applies_to": "stop_sign_compliance"},
+      {"description": "Where two vehicles approach an uncontrolled intersection at approximately the same time, the driver on the left shall yield.", "source": "HTA s.135(2)", "applies_to": "right_of_way_uncontrolled"},
+      {"description": "A driver turning left shall yield to oncoming traffic.", "source": "HTA s.141(6)", "applies_to": "left_turn_yield"}
+    ],
+    "pedestrian_crosswalk": [
+      {"description": "The driver of a vehicle shall yield the right of way to a pedestrian crossing the roadway within a crosswalk.", "source": "HTA s.140(1)(a)", "applies_to": "pedestrian_yield"}
+    ],
+    "school_zone": [
+      {"description": "Speed limit is 15 km/h (or as posted) in a school zone when children are present.", "source": "HTA s.128", "applies_to": "speed_limit"},
+      {"description": "Must stop for school buses with flashing red lights.", "source": "HTA s.175", "applies_to": "school_bus_stop"}
+    ],
+    "following_distance": [
+      {"description": "No driver shall follow another vehicle more closely than is reasonable and prudent having regard for the speed of the vehicle and the condition of the highway.", "source": "HTA s.158(1)", "applies_to": "tailgating"}
+    ],
+    "roundabout": [
+      {"description": "Yield to traffic already in the roundabout before entering.", "source": "HTA s.135(2)", "applies_to": "yield_on_entry"},
+      {"description": "Travel counterclockwise within the roundabout.", "source": "HTA s.153", "applies_to": "direction_of_travel"}
+    ]
+  }
+}

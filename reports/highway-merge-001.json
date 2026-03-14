@@ -1,0 +1,70 @@
+{
+  "scenario_id": "highway-merge-001",
+  "metadata": {
+    "scenario_id": "highway-merge-001",
+    "location": {
+      "lat": 37.3382,
+      "lon": -121.8863,
+      "city": "San Jose",
+      "state": "California",
+      "country": "United States"
+    },
+    "scenario_type": "highway_merge",
+    "description": "Ego vehicle merges onto I-880 northbound from on-ramp during moderate traffic. Target gap is 4 seconds. Adjacent vehicle accelerates during merge window.",
+    "timestamp": "2025-01-15T14:32:00Z"
+  },
+  "legality_research": {
+    "jurisdiction": "San Jose, California, United States",
+    "relevant_laws": [
+      {
+        "description": "A merging vehicle must yield the right-of-way to traffic already on the freeway.",
+        "source": "CA VC 21804",
+        "applies_to": "right_of_way"
+      },
+      {
+        "description": "No person shall drive at such a slow speed as to impede or block the normal and reasonable movement of traffic.",
+        "source": "CA VC 22400",
+        "applies_to": "minimum_speed"
+      },
+      {
+        "description": "Whenever a highway lane ends and the driver is required to merge, the driver shall yield to traffic in the continuing lane.",
+        "source": "CA VC 21804(a)",
+        "applies_to": "merge_yield"
+      },
+      {
+        "description": "Safe following distance must be maintained so that the driver can stop safely.",
+        "source": "CA VC 21703",
+        "applies_to": "following_distance"
+      }
+    ],
+    "research_summary": "4 applicable law(s) found in San Jose, California, United States for 'highway_merge' scenarios."
+  },
+  "existing_metrics": {
+    "collision": false,
+    "max_jerk": 1.6,
+    "max_acceleration": 2.4,
+    "goal_reached": true,
+    "time_to_complete_s": 5.0
+  },
+  "verdict": {
+    "scores": {
+      "safety_margin": 6.0,
+      "comfort": 8.0,
+      "social_compliance": 4.0,
+      "legality": 0.0,
+      "decision_quality": 5.0,
+      "overall": 6.3
+    },
+    "behavior_description": "Ego vehicle merges onto I-880 northbound from on-ramp during moderate traffic but accelerates too quickly causing adjacent vehicle to adjust speed, violating minimum following distance law (CA VC 21703).",
+    "reasoning": "Based on human factors and traffic laws analysis the driver of ego vehicle did not maintain a safe following distance which caused the adjacent vehicle to adjust its speed. This is in violation of CA VC 21703.",
+    "legal_violations": [
+      "Violation: Excessive Speed, Law: California Vehicle Code Section 22400 (Minimum Speed)"
+    ],
+    "metric_blind_spots": [
+      "Metric: Collision detected, Actual behavior: Collision almost occurred due to excessive speed and merging too quickly"
+    ],
+    "recommendations": "The driver should slow down during the merge window and adjust speed according to the adjacent vehicle. The ego vehicle should also keep a safe following distance from the adjacent vehicle.",
+    "confidence": 0.8
+  },
+  "generated_at": "2026-03-14T04:15:27.051482Z"
+}

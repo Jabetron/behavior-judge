@@ -1,0 +1,13 @@
+{
+  "scenario_id": "highway-merge-001",
+  "location": {
+    "lat": 37.3382,
+    "lon": -121.8863,
+    "city": "San Jose",
+    "state": "California",
+    "country": "United States"
+  },
+  "scenario_type": "highway_merge",
+  "description": "Ego vehicle merges onto I-880 northbound from on-ramp during moderate traffic. Target gap is 4 seconds. Adjacent vehicle accelerates during merge window.",
+  "timestamp": "2025-01-15T14:32:00Z"
+}

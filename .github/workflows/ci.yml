@@ -1,0 +1,37 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ["3.11", "3.12"]
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+
+      - name: Install dependencies
+        run: pip install -e ".[dev]"
+
+      - name: Run tests (no API key required)
+        run: python -m pytest --cov=behavior_judge --cov-report=term-missing
+
+      - name: Validate sample scenario schema
+        run: python -c "
+from pathlib import Path
+from behavior_judge.ingestion.replay_loader import load_metadata, load_telemetry
+meta = load_metadata(Path('scenarios/sample'))
+tel = load_telemetry(Path('scenarios/sample'))
+print(f'Scenario: {meta.scenario_id} | Telemetry points: {len(tel)}')
+"

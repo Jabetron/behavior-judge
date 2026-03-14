@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Behavior Judgment — highway-merge-001</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; max-width: 1000px; margin: 40px auto; padding: 0 24px; color: #1a1a2e; background: #f8f9fa; }
+    h1 { border-bottom: 3px solid #e63946; padding-bottom: 12px; margin-bottom: 8px; }
+    h2 { color: #457b9d; margin: 32px 0 12px; }
+    h3 { color: #333; margin: 20px 0 8px; }
+    .meta { background: #edf2f4; padding: 14px 18px; border-radius: 8px; margin-bottom: 24px; font-size: 0.9em; }
+    .section { background: #fff; border: 1px solid #dee2e6; border-radius: 8px; padding: 20px 24px; margin: 12px 0; }
+    .scores { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin: 16px 0; }
+    .score-card { background: #fff; border: 1px solid #dee2e6; border-radius: 8px; padding: 16px; text-align: center; }
+    .score-card .value { font-size: 2.2em; font-weight: 700; }
+    .score-card .label { font-size: 0.78em; color: #666; margin-top: 4px; text-transform: uppercase; letter-spacing: 0.05em; }
+    .badge { display: inline-block; padding: 4px 14px; border-radius: 20px; font-size: 0.8em; font-weight: 700; text-transform: uppercase; letter-spacing: 0.04em; }
+    .badge-ok { background: #2a9d8f; color: #fff; }
+    .badge-false-pass { background: #e63946; color: #fff; }
+    .badge-false-fail { background: #ffb703; color: #000; }
+    .blind-spot { color: #c1121f; margin: 8px 0; padding-left: 4px; border-left: 3px solid #e63946; }
+    .violation { color: #c1121f; margin: 6px 0; }
+    .reasoning { background: #f1faee; padding: 16px 20px; border-left: 4px solid #457b9d; border-radius: 4px; line-height: 1.7; white-space: pre-wrap; }
+    .source { color: #888; font-size: 0.85em; }
+    .stat-row { display: flex; gap: 32px; flex-wrap: wrap; font-size: 0.9em; }
+    .stat { display: flex; flex-direction: column; }
+    .stat .key { color: #888; font-size: 0.8em; text-transform: uppercase; letter-spacing: 0.05em; }
+    .stat .val { font-weight: 600; font-size: 1.05em; margin-top: 2px; }
+    footer { text-align: center; color: #aaa; margin: 40px 0 20px; font-size: 0.8em; }
+  </style>
+</head>
+<body>
+  <h1>Behavior Judgment Report</h1>
+
+  <div class="meta">
+    <strong>highway-merge-001</strong> &nbsp;·&nbsp;
+    highway_merge &nbsp;·&nbsp;
+    San Jose, California, United States &nbsp;·&nbsp;
+    2026-03-14 04:15 UTC
+  </div>
+
+  <h2>Metric Agreement &nbsp; <span class="badge badge-ok">METRICS AGREE</span></h2>
+  <div class="section">
+    <div class="stat-row">
+      <div class="stat"><span class="key">Traditional Verdict</span><span class="val">PASS</span></div>
+      <div class="stat"><span class="key">LLM Verdict</span><span class="val">PASS</span></div>
+      <div class="stat"><span class="key">Blind Spots</span><span class="val">1</span></div>
+      <div class="stat"><span class="key">Legal Violations</span><span class="val">1</span></div>
+      <div class="stat"><span class="key">Confidence</span><span class="val">80%</span></div>
+    </div>
+  </div>
+
+  <h2>Behavior Scores</h2>
+  <div class="scores"><div class="score-card">
+          <div class="value" style="color:#e9c46a">6.0</div>
+          <div class="label">Safety Margin</div>
+        </div><div class="score-card">
+          <div class="value" style="color:#2a9d8f">8.0</div>
+          <div class="label">Comfort</div>
+        </div><div class="score-card">
+          <div class="value" style="color:#e63946">4.0</div>
+          <div class="label">Social Compliance</div>
+        </div><div class="score-card">
+          <div class="value" style="color:#e63946">0.0</div>
+          <div class="label">Legality</div>
+        </div><div class="score-card">
+          <div class="value" style="color:#e63946">5.0</div>
+          <div class="label">Decision Quality</div>
+        </div><div class="score-card">
+          <div class="value" style="color:#e9c46a">6.3</div>
+          <div class="label">Overall</div>
+        </div></div>
+
+  <h2>Metric Blind Spots</h2>
+  <div class="section">
+    <p style="color:#666;font-size:0.9em;margin-top:0">
+      Cases where metric verdicts diverge from judgment — the most actionable output.
+    </p>
+    <ul><li class="blind-spot">Metric: Collision detected, Actual behavior: Collision almost occurred due to excessive speed and merging too quickly</li></ul>
+  </div>
+
+  <h2>Legal Violations</h2>
+  <div class="section">
+    <ul><li class="violation">Violation: Excessive Speed, Law: California Vehicle Code Section 22400 (Minimum Speed)</li></ul>
+    <h3>Researched Laws — San Jose, California, United States</h3>
+    <p style="color:#666;font-size:0.9em">4 applicable law(s) found in San Jose, California, United States for 'highway_merge' scenarios.</p>
+    <ul><li><strong>right_of_way:</strong> A merging vehicle must yield the right-of-way to traffic already on the freeway. <em class='source'>(CA VC 21804)</em></li><li><strong>minimum_speed:</strong> No person shall drive at such a slow speed as to impede or block the normal and reasonable movement of traffic. <em class='source'>(CA VC 22400)</em></li><li><strong>merge_yield:</strong> Whenever a highway lane ends and the driver is required to merge, the driver shall yield to traffic in the continuing lane. <em class='source'>(CA VC 21804(a))</em></li><li><strong>following_distance:</strong> Safe following distance must be maintained so that the driver can stop safely. <em class='source'>(CA VC 21703)</em></li></ul>
+  </div>
+
+  <h2>Reasoning</h2>
+  <div class="section">
+    <div class="reasoning">Based on human factors and traffic laws analysis the driver of ego vehicle did not maintain a safe following distance which caused the adjacent vehicle to adjust its speed. This is in violation of CA VC 21703.</div>
+  </div>
+
+  <h2>Recommendations</h2>
+  <div class="section">
+    <p style="line-height:1.7">The driver should slow down during the merge window and adjust speed according to the adjacent vehicle. The ego vehicle should also keep a safe following distance from the adjacent vehicle.</p>
+  </div>
+
+  <h2>Traditional Metrics</h2>
+  <div class="section">
+    <div class="stat-row">
+      <div class="stat"><span class="key">Collision</span><span class="val">False</span></div>
+      <div class="stat"><span class="key">Goal Reached</span><span class="val">True</span></div>
+      <div class="stat"><span class="key">Max Jerk</span><span class="val">1.600 m/s³</span></div>
+      <div class="stat"><span class="key">Max Accel</span><span class="val">2.400 m/s²</span></div>
+      <div class="stat"><span class="key">Duration</span><span class="val">5.0s</span></div>
+    </div>
+  </div>
+
+  <footer>behavior-judge &nbsp;·&nbsp; powered by Claude &nbsp;·&nbsp; 2026-03-14</footer>
+</body>
+</html>
