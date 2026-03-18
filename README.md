@@ -6,6 +6,12 @@
 
 ---
 
+## Sample Report
+
+![Behavior Judgment Report](docs/sample-report.png)
+
+---
+
 ## The Problem
 
 Current AV evaluation pipelines rely on threshold-based metrics:
